@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Heart, Github, Twitter, Mail, Sparkles } from "lucide-react";
+import { Heart, Github, Twitter, Mail, Sparkles, Linkedin } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -53,6 +53,15 @@ export default function Footer() {
                 className="p-2 rounded-full bg-[var(--accent-cool)]/10 hover:bg-[var(--accent-cool)]/20 transition-colors"
               >
                 <Twitter className="h-5 w-5" />
+              </motion.a>
+              <motion.a
+                href="https://linkedin.com/in/peters-grand-adventure"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1, rotate: -5 }}
+                className="p-2 rounded-full bg-[var(--accent-purple)]/10 hover:bg-[var(--accent-purple)]/20 transition-colors"
+              >
+                <Linkedin className="h-5 w-5" />
               </motion.a>
               <motion.a
                 href="mailto:petersgrandadventure@gmail.com"
