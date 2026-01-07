@@ -58,7 +58,7 @@ const pillars = [
   { icon: Heart, label: "Love", color: "var(--accent-pink)" },
   { icon: Users, label: "Connection", color: "var(--accent-cool)" },
   { icon: Globe, label: "Storytelling", color: "var(--accent-warm)" },
-  { icon: Zap, label: "Technology", color: "var(--accent-purple)" },
+  { icon: Zap, label: "Technology", color: "var(--accent-lavender)" },
 ];
 
 export default function Home() {
@@ -72,7 +72,7 @@ export default function Home() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <Sparkles className="h-16 w-16 mx-auto text-[var(--accent-warm)] mb-6" />
+            <Sparkles className="h-16 w-16 mx-auto text-[var(--accent-lavender)] mb-6" />
           </motion.div>
           
           <motion.h1
@@ -81,7 +81,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-7xl font-bold dream-text"
           >
-            <span className="bg-gradient-to-r from-[var(--accent-warm)] via-[var(--accent-pink)] to-[var(--accent-cool)] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[var(--accent-lavender)] via-[var(--accent-purple)] to-[var(--accent-pink)] bg-clip-text text-transparent">
               Peter&apos;s Grand Adventure
             </span>
           </motion.h1>

@@ -37,9 +37,9 @@ export default function Navigation() {
                 animate={{ rotate: [0, 10, -10, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               >
-                <Sparkles className="h-8 w-8 text-[var(--accent-warm)]" />
+                <Sparkles className="h-8 w-8 text-[var(--accent-lavender)]" />
               </motion.div>
-              <span className="text-xl font-bold dream-text bg-gradient-to-r from-[var(--accent-warm)] via-[var(--accent-pink)] to-[var(--accent-cool)] bg-clip-text text-transparent">
+              <span className="text-xl font-bold dream-text bg-gradient-to-r from-[var(--accent-lavender)] via-[var(--accent-purple)] to-[var(--accent-pink)] bg-clip-text text-transparent">
                 Peter&apos;s Grand Adventure
               </span>
             </Link>
@@ -50,7 +50,7 @@ export default function Navigation() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="relative px-4 py-2 rounded-full hover:bg-[var(--accent-warm)]/10 transition-colors group"
+                  className="relative px-4 py-2 rounded-full hover:bg-[var(--accent-lavender)]/10 transition-colors group"
                 >
                   <motion.div
                     initial={{ opacity: 0, y: -10 }}
@@ -58,8 +58,8 @@ export default function Navigation() {
                     transition={{ delay: index * 0.1 }}
                     className="flex items-center gap-2"
                   >
-                    <item.icon className="h-4 w-4 text-[var(--accent-cool)] group-hover:text-[var(--accent-warm)] transition-colors" />
-                    <span className="text-sm font-medium text-[var(--foreground)] group-hover:text-[var(--accent-warm)] transition-colors">
+                    <item.icon className="h-4 w-4 text-[var(--accent-lavender)] group-hover:text-[var(--accent-purple)] transition-colors" />
+                    <span className="text-sm font-medium text-[var(--foreground)] group-hover:text-[var(--accent-purple)] transition-colors">
                       {item.label}
                     </span>
                   </motion.div>
@@ -73,16 +73,16 @@ export default function Navigation() {
               className="md:hidden p-2 rounded-full interactive-element"
             >
               {isOpen ? (
-                <X className="h-6 w-6 text-[var(--accent-warm)]" />
+                <X className="h-6 w-6 text-[var(--accent-lavender)]" />
               ) : (
-                <Menu className="h-6 w-6 text-[var(--accent-warm)]" />
+                <Menu className="h-6 w-6 text-[var(--accent-lavender)]" />
               )}
             </button>
           </div>
         </div>
 
         {/* Gradient line */}
-        <div className="h-[2px] bg-gradient-to-r from-transparent via-[var(--accent-warm)] to-transparent opacity-50" />
+        <div className="h-[2px] bg-gradient-to-r from-transparent via-[var(--accent-purple)] to-transparent opacity-50" />
       </nav>
 
       {/* Mobile Menu */}

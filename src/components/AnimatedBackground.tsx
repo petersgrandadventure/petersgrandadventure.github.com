@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 export default function AnimatedBackground() {
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden">
-      {/* Base gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a12] via-[#12121f] to-[#0a0a12]" />
+      {/* Base gradient - purple tinted */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0f0a14] via-[#1a1225] to-[#0f0a14]" />
       
-      {/* Animated blobs */}
+      {/* Animated blobs - more purple focused */}
       <motion.div
-        className="blob absolute top-1/4 left-1/4 w-96 h-96 bg-[var(--accent-warm)]"
+        className="blob absolute top-1/4 left-1/4 w-96 h-96 bg-[var(--accent-lavender)]"
         animate={{
           x: [0, 100, -50, 0],
           y: [0, -50, 100, 0],
@@ -23,7 +23,7 @@ export default function AnimatedBackground() {
         }}
       />
       <motion.div
-        className="blob absolute top-1/2 right-1/4 w-80 h-80 bg-[var(--accent-cool)]"
+        className="blob absolute top-1/2 right-1/4 w-80 h-80 bg-[var(--accent-purple)]"
         animate={{
           x: [0, -80, 60, 0],
           y: [0, 80, -40, 0],
@@ -36,7 +36,7 @@ export default function AnimatedBackground() {
         }}
       />
       <motion.div
-        className="blob absolute bottom-1/4 left-1/3 w-72 h-72 bg-[var(--accent-pink)]"
+        className="blob absolute bottom-1/4 left-1/3 w-72 h-72 bg-[var(--accent-aubergine)]"
         animate={{
           x: [0, 60, -80, 0],
           y: [0, -60, 40, 0],
@@ -49,7 +49,7 @@ export default function AnimatedBackground() {
         }}
       />
       <motion.div
-        className="blob absolute top-1/3 right-1/3 w-64 h-64 bg-[var(--accent-purple)]"
+        className="blob absolute top-1/3 right-1/3 w-64 h-64 bg-[var(--accent-pink)]"
         animate={{
           x: [0, -40, 80, 0],
           y: [0, 60, -80, 0],
@@ -57,6 +57,19 @@ export default function AnimatedBackground() {
         }}
         transition={{
           duration: 28,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
+      <motion.div
+        className="blob absolute bottom-1/3 right-1/2 w-88 h-88 bg-[var(--accent-purple)]"
+        animate={{
+          x: [0, 70, -30, 0],
+          y: [0, -40, 70, 0],
+          scale: [1, 1.1, 0.9, 1],
+        }}
+        transition={{
+          duration: 24,
           repeat: Infinity,
           ease: "easeInOut",
         }}

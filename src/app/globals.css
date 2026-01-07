@@ -1,15 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a12;
-  --foreground: #f0e6d3;
+  --background: #0f0a14;
+  --foreground: #f0e6f3;
   --accent-warm: #e8a87c;
   --accent-cool: #7eb8da;
   --accent-pink: #c38d9e;
   --accent-green: #85dcb8;
   --accent-purple: #9b7ed9;
+  --accent-lavender: #c4b5e0;
+  --accent-aubergine: #5c3d6e;
   --glow-warm: rgba(232, 168, 124, 0.4);
   --glow-cool: rgba(126, 184, 218, 0.4);
+  --glow-purple: rgba(155, 126, 217, 0.5);
+  --glow-lavender: rgba(196, 181, 224, 0.4);
 }
 
 @theme inline {
@@ -20,6 +24,8 @@
   --color-accent-pink: var(--accent-pink);
   --color-accent-green: var(--accent-green);
   --color-accent-purple: var(--accent-purple);
+  --color-accent-lavender: var(--accent-lavender);
+  --color-accent-aubergine: var(--accent-aubergine);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -83,7 +89,7 @@ body {
   content: '';
   position: absolute;
   inset: -3px;
-  background: linear-gradient(45deg, var(--accent-warm), var(--accent-cool), var(--accent-pink), var(--accent-green));
+  background: linear-gradient(45deg, var(--accent-lavender), var(--accent-purple), var(--accent-aubergine), var(--accent-pink), var(--accent-lavender));
   border-radius: inherit;
   z-index: -1;
   animation: color-shift 6s ease-in-out infinite;
@@ -106,8 +112,8 @@ body {
 /* Dreamy text effect */
 .dream-text {
   text-shadow: 
-    0 0 10px var(--glow-warm),
-    0 0 20px var(--glow-cool),
+    0 0 10px var(--glow-purple),
+    0 0 20px var(--glow-lavender),
     2px 2px 0 rgba(0,0,0,0.3);
   animation: breathe 4s ease-in-out infinite;
 }
@@ -184,12 +190,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(var(--accent-warm), var(--accent-cool));
+  background: linear-gradient(var(--accent-lavender), var(--accent-purple), var(--accent-aubergine));
   border-radius: 4px;
 }
 
 /* Selection color */
 ::selection {
-  background: var(--accent-pink);
-  color: var(--background);
+  background: var(--accent-lavender);
+  color: var(--accent-aubergine);
 }
